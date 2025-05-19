@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokeneas de Antioquia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #e74c3c;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .subtitle {
+      font-style: italic;
+      margin-top: 5px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .card h2 {
+      color: #e74c3c;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .btn:hover {
+      background-color: #c0392b;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Pokeneas de Antioquia</h1>
+      <p class="subtitle">¡Descubre los Pokémon nacidos en la tierra paisa!</p>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <h2>Bienvenido a la Pokedex Paisa</h2>
+      <p>Explora nuestros Pokeneas, criaturas únicas con el espíritu y la cultura antioqueña.</p>
+      
+      <h3>¿Qué quieres hacer?</h3>
+      <a href="/api/pokenea" class="btn">Ver información en JSON</a>
+      <a href="/pokenea" class="btn">Ver Pokenea con imagen</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>Proyecto Pokedex Antioqueña &copy; 2023</p>
+    </div>
+  </footer>
+</body>
+</html> 

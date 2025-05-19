@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokenea: <%= pokenea.nombre %></title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #e74c3c;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .pokenea-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .pokenea-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .pokenea-quote {
+      font-style: italic;
+      font-size: 1.2em;
+      color: #666;
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-left: 4px solid #e74c3c;
+    }
+    .container-id {
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #888;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #c0392b;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Pokenea: <%= pokenea.nombre %></h1>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="pokenea-card">
+      <img src="<%= pokenea.imagen %>" alt="<%= pokenea.nombre %>" class="pokenea-image">
+      
+      <div class="pokenea-quote">
+        "<%= pokenea.fraseFilosofica %>"
+      </div>
+      
+      <div class="container-id">
+        ID del contenedor: <%= pokenea.contenedorId %>
+      </div>
+      
+      <a href="/" class="btn">Volver al inicio</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>Proyecto Pokedex Antioqueña &copy; 2023</p>
+    </div>
+  </footer>
+</body>
+</html> 
